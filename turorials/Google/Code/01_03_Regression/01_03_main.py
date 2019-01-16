@@ -14,8 +14,8 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
-# 1.12.0
-print(tf.__version__)
+# TensorFlow's version : 1.12.0
+print('TensorFlow\'s version : ', tf.__version__)
 
 #----------------
 # 1 Auto MPG数据集

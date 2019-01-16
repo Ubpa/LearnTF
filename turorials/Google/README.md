@@ -1,4 +1,4 @@
-Tutorial: Google
+# Tutorial: Google
 
 https://tensorflow.google.cn/tutorials/
 
@@ -8,7 +8,7 @@ https://tensorflow.google.cn/tutorials/
   - [x] 01_01 基本分类
   - [x] 01_02 文本分类
   - [x] 01_03 回归
-  - [ ] 01_04 过拟合和欠拟合
+  - [x] 01_04 过拟合和欠拟合
   - [ ] 01_05 保存和恢复模型
 - [ ] 02 研究和实验
   - [ ] 02_01 Eager Execution

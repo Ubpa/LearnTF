@@ -8,6 +8,10 @@ from tensorflow import keras
 
 # Helper libraries
 import numpy as np
+import matplotlib.pyplot as plt
+
+# TensorFlow's version : 1.12.0
+print('TensorFlow\'s version : ', tf.__version__)
 
 #----------------
 # 1 下载 IMDB 数据集
@@ -121,8 +125,6 @@ history_dict = history.history
 
 # dict_keys(['loss', 'val_loss', 'val_acc', 'acc'])
 print(history_dict.keys())
-
-import matplotlib.pyplot as plt
 
 acc = history.history['acc']
 val_acc = history.history['val_acc']

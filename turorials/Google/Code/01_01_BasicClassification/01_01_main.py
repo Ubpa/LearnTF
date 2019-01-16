@@ -10,7 +10,8 @@ from tensorflow import keras
 import numpy as np
 import matplotlib.pyplot as plt
 
-print(tf.__version__)
+# TensorFlow's version : 1.12.0
+print('TensorFlow\'s version : ', tf.__version__)
 
 #----------------
 # 1 导入 Fashion MNIST 数据集
