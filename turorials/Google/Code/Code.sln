@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "01_01_BasicClassification", "01_01_BasicClassification\01_01_BasicClassification.pyproj", "{12128B8B-3D24-4C8A-8A3A-98C4916835A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{20E8CA25-2180-4C64-A0DD-69D0407D6632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12128B8B-3D24-4C8A-8A3A-98C4916835A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12128B8B-3D24-4C8A-8A3A-98C4916835A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12128B8B-3D24-4C8A-8A3A-98C4916835A1} = {20E8CA25-2180-4C64-A0DD-69D0407D6632}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28885103-15BF-42C1-9030-C6605489FA53}
+	EndGlobalSection
+EndGlobal

@@ -46,6 +46,8 @@ Python 虚拟环境用于将软件包安装与系统隔离开来。
 virtualenv --system-site-packages -p python ./venv
 ```
 
+> venv 创建在 当前用户 的根目录
+
 激活虚拟环境：
 
 ```bash
@@ -118,4 +120,16 @@ python -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce
 > ```
 > tf.Tensor(-113.32004, shape=(), dtype=float32)
 > ```
+
+## 4. 其他
+
+**安装 matplotlib** 
+
+```bash
+pip install matplotlib
+```
+
+## 5. vs2017
+
+在python环境中添加现有虚拟环境
 
