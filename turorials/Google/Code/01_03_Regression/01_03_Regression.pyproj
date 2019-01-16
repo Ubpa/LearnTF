@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>2c14f747-feef-4db4-b249-4f0f1df6738a</ProjectGuid>
+    <ProjectGuid>27d13ba4-30f2-4629-b566-5f38b7dce5d9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>01_02_TextClassification</Name>
-    <RootNamespace>01_02_TextClassification</RootNamespace>
+    <Name>01_03_Regression</Name>
+    <RootNamespace>01_03_Regression</RootNamespace>
     <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\Code\01_01_BasicClassification\01_01_BasicClassification.pyproj</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

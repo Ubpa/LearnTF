@@ -1,3 +1,7 @@
+#----------------
+# 01_02 文本分类
+#----------------
+
 # TensorFlow and tf.keras
 import tensorflow as tf
 from tensorflow import keras
@@ -6,7 +10,7 @@ from tensorflow import keras
 import numpy as np
 
 #----------------
-# 1 
+# 1 下载 IMDB 数据集
 #----------------
 
 imdb = keras.datasets.imdb
@@ -14,7 +18,7 @@ imdb = keras.datasets.imdb
 (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 
 #----------------
-# 2
+# 2 探索数据
 #----------------
 
 # Training entries: 25000, labels: 25000
@@ -43,7 +47,7 @@ def decode_review(text):
 decode_review(train_data[0])
 
 #----------------
-# 3
+# 3 准备数据
 #----------------
 
 train_data = keras.preprocessing.sequence.pad_sequences(train_data,
@@ -62,7 +66,7 @@ print((len(train_data[0]), len(train_data[1])))
 print(train_data[0])
 
 #----------------
-# 4
+# 4 构建模型
 #----------------
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)
@@ -81,7 +85,7 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               metrics=['accuracy'])
 
 #----------------
-# 5
+# 5 创建验证集
 #----------------
 
 x_val = train_data[:10000]
@@ -91,7 +95,7 @@ y_val = train_labels[:10000]
 partial_y_train = train_labels[10000:]
 
 #----------------
-# 6
+# 6 训练模型
 #----------------
 
 history = model.fit(partial_x_train,
@@ -102,7 +106,7 @@ history = model.fit(partial_x_train,
                     verbose=1)
 
 #----------------
-# 7
+# 7 评估模型
 #----------------
 
 results = model.evaluate(test_data, test_labels)
@@ -110,7 +114,7 @@ results = model.evaluate(test_data, test_labels)
 print(results)
 
 #----------------
-# 8
+# 8 创建准确率和损失随时间变化的图
 #----------------
 
 history_dict = history.history

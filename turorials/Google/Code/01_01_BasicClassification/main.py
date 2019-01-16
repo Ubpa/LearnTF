@@ -1,3 +1,7 @@
+#----------------
+# 01_01 基本分类
+#----------------
+
 # TensorFlow and tf.keras
 import tensorflow as tf
 from tensorflow import keras
@@ -9,7 +13,7 @@ import matplotlib.pyplot as plt
 print(tf.__version__)
 
 #----------------
-# 1
+# 1 导入 Fashion MNIST 数据集
 #----------------
 
 fashion_mnist = keras.datasets.fashion_mnist
@@ -19,7 +23,7 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
                'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
 #----------------
-# 2
+# 2 探索数据
 #----------------
 
 # (60000, 28, 28)
@@ -38,7 +42,7 @@ print(test_images.shape)
 print(len(test_labels))
 
 #----------------
-# 3
+# 3 预处理数据
 #----------------
 
 plt.figure()
@@ -64,7 +68,7 @@ for i in range(25):
 plt.show()
 
 #----------------
-# 4
+# 4 构建模型
 #----------------
 
 model = keras.Sequential([
@@ -81,13 +85,13 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               metrics=['accuracy'])
 
 #----------------
-# 5
+# 5 训练模型
 #----------------
 
 model.fit(train_images, train_labels, epochs=5)
 
 #----------------
-# 6
+# 6 评估准确率
 #----------------
 
 test_loss, test_acc = model.evaluate(test_images, test_labels)
@@ -95,7 +99,7 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print('Test accuracy:', test_acc)
 
 #----------------
-# 7
+# 7 做出预测
 #----------------
 
 predictions = model.predict(test_images)
