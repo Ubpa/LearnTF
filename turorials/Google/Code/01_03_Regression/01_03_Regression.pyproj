@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>27d13ba4-30f2-4629-b566-5f38b7dce5d9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,10 +23,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.py" />
+    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\Code\01_01_BasicClassification\01_01_BasicClassification.pyproj" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\Code\01_01_BasicClassification\01_01_BasicClassification.pyproj" />
+    <Compile Include="01_03_main.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

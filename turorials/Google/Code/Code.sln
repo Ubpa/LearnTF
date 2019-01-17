@@ -11,6 +11,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "01_02_TextClassification", 
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "01_03_Regression", "01_03_Regression\01_03_Regression.pyproj", "{27D13BA4-30F2-4629-B566-5F38B7DCE5D9}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "01_04_Fit", "01_04_Fit\01_04_Fit.pyproj", "{3F6DFC48-99EB-4A4A-B43C-A20B45E880EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,8 @@ Global
 		{2C14F747-FEEF-4DB4-B249-4F0F1DF6738A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27D13BA4-30F2-4629-B566-5F38B7DCE5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27D13BA4-30F2-4629-B566-5F38B7DCE5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6DFC48-99EB-4A4A-B43C-A20B45E880EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6DFC48-99EB-4A4A-B43C-A20B45E880EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -31,6 +35,7 @@ Global
 		{12128B8B-3D24-4C8A-8A3A-98C4916835A1} = {20E8CA25-2180-4C64-A0DD-69D0407D6632}
 		{2C14F747-FEEF-4DB4-B249-4F0F1DF6738A} = {20E8CA25-2180-4C64-A0DD-69D0407D6632}
 		{27D13BA4-30F2-4629-B566-5F38B7DCE5D9} = {20E8CA25-2180-4C64-A0DD-69D0407D6632}
+		{3F6DFC48-99EB-4A4A-B43C-A20B45E880EA} = {20E8CA25-2180-4C64-A0DD-69D0407D6632}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28885103-15BF-42C1-9030-C6605489FA53}

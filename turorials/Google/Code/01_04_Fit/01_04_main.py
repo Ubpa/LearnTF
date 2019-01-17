@@ -69,7 +69,7 @@ def plot_loss(history):
     loss = history_dict['loss']
     val_loss = history_dict['val_loss']
 
-    epochs = range(1, len(acc) + 1)
+    epochs = range(1, len(loss) + 1)
 
     # "bo" is for "red line"
     plt.plot(epochs, loss, 'r', label='Training loss')
@@ -170,6 +170,8 @@ l2_model.compile(optimizer='adam',
                  loss='binary_crossentropy',
                  metrics=['accuracy', 'binary_crossentropy'])
 
+l2_model.summary()
+
 l2_model_history = l2_model.fit(train_data, train_labels,
                                 epochs=20,
                                 batch_size=512,
@@ -194,6 +196,8 @@ dpt_model.compile(optimizer='adam',
                   loss='binary_crossentropy',
                   metrics=['accuracy','binary_crossentropy'])
 
+dpt_model.summary()
+
 dpt_model_history = dpt_model.fit(train_data, train_labels,
                                   epochs=20,
                                   batch_size=512,
@@ -203,4 +207,63 @@ dpt_model_history = dpt_model.fit(train_data, train_labels,
 plot_history([('baseline', baseline_history),
               ('l2', l2_model_history),
               ('dropout', dpt_model_history)])
+plt.show()
+
+# -- 3.3 批标准化 --
+
+bn_model = keras.models.Sequential([
+    keras.layers.Dense(16, activation=tf.nn.relu, input_shape=(NUM_WORDS,)),
+    keras.layers.BatchNormalization(scale=False),
+    keras.layers.Dense(16, activation=tf.nn.relu),
+    keras.layers.BatchNormalization(scale=False),
+    keras.layers.Dense(1, activation=tf.nn.sigmoid)
+])
+
+bn_model.compile(optimizer='adam',
+                  loss='binary_crossentropy',
+                  metrics=['accuracy','binary_crossentropy'])
+
+bn_model.summary()
+
+bn_model_history = bn_model.fit(train_data, train_labels,
+                                  epochs=20,
+                                  batch_size=512,
+                                  validation_data=(test_data, test_labels),
+                                  verbose=2)
+
+plot_history([('baseline', baseline_history),
+              ('l2', l2_model_history),
+              ('dropout', dpt_model_history),
+              ('bn', bn_model_history)])
+plt.show()
+
+# -- 3.4 综合 --
+
+all_model = keras.models.Sequential([
+    keras.layers.Dense(16, kernel_regularizer=keras.regularizers.l2(0.001), activation=tf.nn.relu, input_shape=(NUM_WORDS,)),
+    keras.layers.BatchNormalization(scale=False),
+    keras.layers.Dropout(0.5),
+    keras.layers.Dense(16, kernel_regularizer=keras.regularizers.l2(0.001), activation=tf.nn.relu),
+    keras.layers.BatchNormalization(scale=False),
+    keras.layers.Dropout(0.5),
+    keras.layers.Dense(1, activation=tf.nn.sigmoid)
+])
+
+all_model.compile(optimizer='adam',
+                  loss='binary_crossentropy',
+                  metrics=['accuracy','binary_crossentropy'])
+
+all_model.summary()
+
+all_model_history = all_model.fit(train_data, train_labels,
+                                  epochs=20,
+                                  batch_size=512,
+                                  validation_data=(test_data, test_labels),
+                                  verbose=2)
+
+plot_history([('baseline', baseline_history),
+              ('l2', l2_model_history),
+              ('dropout', dpt_model_history),
+              ('bn', bn_model_history),
+              ('all', all_model_history)])
 plt.show()
