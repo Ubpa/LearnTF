@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "01_01_1_plus_1", "01_01_1_plus_1\01_01_1_plus_1.pyproj", "{E268C876-0680-495F-A7C2-0406774B1A06}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "01_02_LinearRegression", "01_02_LinearRegression\01_02_LinearRegression.pyproj", "{011F78B1-4D1B-41C3-B1EC-A6773B19F8AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Basic", "01_Basic", "{E495E25B-47B2-4BDC-931D-119FE1E27EED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,9 +17,15 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E268C876-0680-495F-A7C2-0406774B1A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E268C876-0680-495F-A7C2-0406774B1A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011F78B1-4D1B-41C3-B1EC-A6773B19F8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011F78B1-4D1B-41C3-B1EC-A6773B19F8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E268C876-0680-495F-A7C2-0406774B1A06} = {E495E25B-47B2-4BDC-931D-119FE1E27EED}
+		{011F78B1-4D1B-41C3-B1EC-A6773B19F8AD} = {E495E25B-47B2-4BDC-931D-119FE1E27EED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BF68989-AA1D-47AE-B9F6-1D7BF43919E1}
