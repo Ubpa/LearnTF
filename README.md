@@ -13,4 +13,5 @@
 ## 2. Tutorial
 
 - [Google](https://tensorflow.google.cn/tutorials/) 
+- [Concise Handbook](https://tf.wiki/) 
 

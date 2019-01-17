@@ -131,7 +131,3 @@ pip install h5py
 pip install pyyaml
 ```
 
-## 5. vs2017
-
-在python环境中添加现有虚拟环境
-
