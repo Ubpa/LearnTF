@@ -123,10 +123,12 @@ python -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce
 
 ## 4. 其他
 
-**安装 matplotlib** 
+**安装其他依赖项** 
 
 ```bash
 pip install matplotlib
+pip install h5py
+pip install pyyaml
 ```
 
 ## 5. vs2017

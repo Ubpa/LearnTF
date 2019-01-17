@@ -1,1 +1,5 @@
 .vs/
+checkpoint
+*.index
+*.data*
+*.h5
