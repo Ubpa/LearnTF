@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cdb68044-10c8-48aa-9507-a5b5804d92ef</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>_03_DAE.py</StartupFile>
+    <StartupFile>03_main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>03_DAE</Name>
     <RootNamespace>03_DAE</RootNamespace>
+    <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\DeepInterests\projects\01_Word_Cloud\01_Word_Cloud.pyproj</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="_03_DAE.py" />
+    <Compile Include="03_main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\DeepInterests\projects\01_Word_Cloud\01_Word_Cloud.pyproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

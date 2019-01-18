@@ -153,6 +153,7 @@ class StyleTransfer(object):
         self.optimizer = tf.train.AdamOptimizer(self.lr).minimize(self.total_loss, global_step=self.gstep)
 
     def create_summary(self):
+        # summary 用于 tensorboard
         with tf.name_scope("summary"):
             tf.summary.scalar("contents_loss", self.content_loss)
             tf.summary.scalar("style_loss", self.style_loss)
@@ -169,11 +170,13 @@ class StyleTransfer(object):
     def train(self, epoches=300):
         skip_step = 1
         with tf.Session() as sess:
+            # global init
             sess.run(tf.global_variables_initializer())
             writer = tf.summary.FileWriter("graphs/style_transfer", sess.graph)
             
             sess.run(self.input_img.assign(self.initial_img))
 
+            # 保存与恢复
             saver = tf.train.Saver()
             ckpt = tf.train.get_checkpoint_state(os.path.dirname("checkpoints/%s_%s_style_transfer/checkpoint" %
                                                                  (self.content_name, self.style_name)))

@@ -4,6 +4,9 @@ from keras.models import Model
 from keras.datasets import mnist
 import numpy as np
 
+# use Matplotlib (don't ask)
+import matplotlib.pyplot as plt
+
 (x_train, _), (x_test, _) = mnist.load_data()
 
 x_train = x_train.astype('float32') / 255.
@@ -47,15 +50,12 @@ autoencoder = Model(input_img, decoded)
 autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
 
 autoencoder.fit(x_train_noisy, x_train,
-                epochs=2,
+                epochs=20,
                 batch_size=128,
                 shuffle=True,
                 validation_data=(x_test_noisy, x_test) )
 
 denoised_imgs = autoencoder.predict(x_test_noisy)
-
-# use Matplotlib (don't ask)
-import matplotlib.pyplot as plt
 
 n = 10  # how many digits we will display
 plt.figure(figsize=(20, 4))
