@@ -14,4 +14,5 @@
 
 - [Google](https://tensorflow.google.cn/tutorials/) 
 - [Concise Handbook](https://tf.wiki/) 
+- [Deep Interests](https://github.com/Honlan/DeepInterests) 
 
