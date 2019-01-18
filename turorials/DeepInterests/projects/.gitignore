@@ -1,1 +1,6 @@
 .vs/
+events.out.tfevents.*
+*.data*
+*.meta
+*.index
+checkpoint
