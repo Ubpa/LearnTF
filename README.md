@@ -12,6 +12,7 @@
 
 ## 2. Tutorial
 
+- [Keras中文文档](https://keras-zh.readthedocs.io/) 
 - [Google](https://tensorflow.google.cn/tutorials/) 
 - [Concise Handbook](https://tf.wiki/) 
 - [Deep Interests](https://github.com/Honlan/DeepInterests) 

@@ -2,17 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>27d13ba4-30f2-4629-b566-5f38b7dce5d9</ProjectGuid>
+    <ProjectGuid>8a036bbb-ca52-4421-baa1-3947f5dcd15a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>01_01_01_main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>01_03_Regression</Name>
-    <RootNamespace>01_03_Regression</RootNamespace>
-    <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\projects\01_01_BasicClassification\01_01_BasicClassification.pyproj</InterpreterId>
+    <Name>01_01_01_MLP_softmax</Name>
+    <RootNamespace>01_01_01_MLP_softmax</RootNamespace>
+    <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,10 +22,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\projects\01_01_BasicClassification\01_01_BasicClassification.pyproj" />
+    <Compile Include="01_01_01_main.py" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01_03_main.py" />
+    <Interpreter Include="C:\Users\Administrator\venv\">
+      <Id>venv</Id>
+      <Version>3.6</Version>
+      <Description>venv (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
