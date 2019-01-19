@@ -2,17 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>2c14f747-feef-4db4-b249-4f0f1df6738a</ProjectGuid>
+    <ProjectGuid>1ceba435-b29d-4952-a2a1-2fc515e82f6b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>04_main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>01_02_TextClassification</Name>
-    <RootNamespace>01_02_TextClassification</RootNamespace>
-    <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\projects\01_01_BasicClassification\01_01_BasicClassification.pyproj</InterpreterId>
+    <Name>04_VAE</Name>
+    <RootNamespace>04_VAE</RootNamespace>
+    <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\DeepInterests\projects\01_Word_Cloud\01_Word_Cloud.pyproj</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,10 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\projects\01_01_BasicClassification\01_01_BasicClassification.pyproj" />
+    <Compile Include="04_main.py" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01_02_main.py" />
+    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\DeepInterests\projects\01_Word_Cloud\01_Word_Cloud.pyproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

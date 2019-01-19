@@ -12,7 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>01_04_Fit</Name>
     <RootNamespace>01_04_Fit</RootNamespace>
-    <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\Code\01_01_BasicClassification\01_01_BasicClassification.pyproj</InterpreterId>
+    <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\projects\01_01_BasicClassification\01_01_BasicClassification.pyproj</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,7 +26,7 @@
     <Compile Include="01_04_main.py" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\Code\01_01_BasicClassification\01_01_BasicClassification.pyproj" />
+    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\Google\projects\01_01_BasicClassification\01_01_BasicClassification.pyproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
