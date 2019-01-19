@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>47ff0824-3c82-4bc3-8e18-caa7103c648f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>_01_01_04_LSTM.py</StartupFile>
+    <StartupFile>01_01_04_main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>01_01_04_LSTM</Name>
     <RootNamespace>01_01_04_LSTM</RootNamespace>
+    <InterpreterId>MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\KerasDoc\projects\01_01_01_MLP_softmax\01_01_01_MLP_softmax.pyproj</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="_01_01_04_LSTM.py" />
+    <Compile Include="01_01_04_main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="MSBuild|venv|D:\CS\GithubRepository\LearnTF\turorials\KerasDoc\projects\01_01_01_MLP_softmax\01_01_01_MLP_softmax.pyproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

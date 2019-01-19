@@ -51,6 +51,7 @@ class RNN(tf.keras.Model):
         inputs = tf.one_hot(inputs, depth=self.num_chars)       # [batch_size, seq_length, num_chars]
         state = self.cell.zero_state(batch_size=batch_size, dtype=tf.float32)
         for t in range(seq_length.numpy()):
+            # 舍弃其他前边的output，只要最后一个output
             output, state = self.cell(inputs[:, t, :], state)
         output = self.dense(output)
         return output

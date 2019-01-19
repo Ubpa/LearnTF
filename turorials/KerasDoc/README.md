@@ -7,7 +7,7 @@ https://keras-zh.readthedocs.io/
 - [x] 00 简介
 - [ ] 01 快速开始
   - [x] 01_01 `Sequential` 顺序模型指引
-  - [ ] 01_02 函数式 `API` 指引
+  - [x] 01_02 函数式 `API` 指引
   - [ ] 01_03 FAQ 常见问题解答
 - [ ] 02 模型
   - [ ] 02_01 关于 `Keras` 网络层
