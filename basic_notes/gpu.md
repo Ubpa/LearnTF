@@ -38,3 +38,25 @@ CUDA_PATH = %CUDA_PATH_V9_0%
 pip install tensorflow-gpu
 ```
 
+## 4. 更新库
+
+```bash
+pip list --outdated #列出所有过期的库
+```
+
+```python
+# -*- coding: utf-8 -*-
+import pip
+# pip V10.0.0以上版本需要导入下面的包
+from pip._internal.utils.misc import get_installed_distributions
+from subprocess import call
+from time import sleep
+ 
+for dist in get_installed_distributions():
+    call("pip install --upgrade " + dist.project_name, shell=True)
+```
+
+## 5. 注意事项
+
+刚开始运行时会出现卡顿，因为加载gpu需要一定时间，稍等即可
+
